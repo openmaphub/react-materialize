@@ -1,8 +1,6 @@
-/** @jsx React.DOM */
 
 var React = require('react'),
-    cx = React.addons.classSet,
-    joinClasses = require('react/lib/joinClasses'),
+    classNames = require('classnames'),
     constants = require('./constants'),
     BaseMixin = require('./BaseMixin');
 
@@ -29,19 +27,20 @@ var Button = React.createClass({
     constants.STYLES.forEach(style => {
       classes['btn-' + style] = this.props[style];
     });
+
     return (
-      <C {...this.props} className={cx(classes)}>
+      <C {...this.props} className={classNames(classes)}>
         {this.props.children}
       </C>
     );
   },
-  renderAnchor(classes) {
+  renderAnchor: function(classes) {
     var C = this.props.node || 'a';
     var href = this.props.href || '#';
     return (
       <C {...this.props}
         href={href}
-        className={cx(classes)}>
+        className={classNames(classes)}>
         {this.props.children}
       </C>
     );
