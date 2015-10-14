@@ -1,6 +1,6 @@
 var React = require('react/addons'),
     cx = React.addons.classSet,
-    joinClasses = require('react/lib/joinClasses');
+    joinClasses = require('classnames');
 
 var Collection = React.createClass({
   propTypes: {

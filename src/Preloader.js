@@ -1,6 +1,6 @@
 var React = require('react/addons'),
     cx = React.addons.classSet,
-    joinClasses = require('react/lib/joinClasses'),
+    joinClasses = require('classnames'),
     constants = require('./constants');
 
 var Preloader = React.createClass({

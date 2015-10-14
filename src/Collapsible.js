@@ -1,6 +1,6 @@
 var React = require('react/addons'),
     cx = React.addons.classSet,
-    joinClasses = require('react/lib/joinClasses'),
+    joinClasses = require('classnames'),
     cloneWithProps = require('react/lib/cloneWithProps');
 
 var Collapsible = React.createClass({

@@ -1,5 +1,5 @@
 var React = require('react/addons'),
-    joinClasses = require('react/lib/joinClasses');
+    joinClasses = require('classnames');
 
 var Row = React.createClass({
   propTypes: {
