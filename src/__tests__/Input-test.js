@@ -2,7 +2,7 @@ jest.dontMock('../Input');
 jest.dontMock('../constants');
 
 describe('Input', function() {
-  var React = require('react/addons'),
+  var React = require('react'),
       TestUtils = React.addons.TestUtils,
       Input = require('../Input'),
       instance = null;

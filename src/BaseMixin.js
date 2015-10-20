@@ -1,9 +1,10 @@
 
-var React = require('react/addons'),
+var React = require('react'),
+    classNames = require('classnames'),
     constants = require('./constants');
 
 var BaseMixin = {
-  cx: React.addons.classSet
+  cx: classNames
 };
 
 module.exports = BaseMixin;

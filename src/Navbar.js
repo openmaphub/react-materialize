@@ -1,6 +1,5 @@
-var React = require('react/addons'),
-    cx = React.addons.classSet,
-    joinClasses = require('classnames');
+var React = require('react'),
+    cx = require('classnames');
 
 var Navbar = React.createClass({
   propTypes: {
@@ -24,7 +23,7 @@ var Navbar = React.createClass({
             data-activates='nav-mobile'>
             <i className='mdi-navigation-menu'></i>
           </a>
-          <ul className={joinClasses(className, cx(classes))}>
+          <ul className={cx(className, classes)}>
             {this.props.children}
           </ul>
         </div>

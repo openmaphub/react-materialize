@@ -1,6 +1,5 @@
-var React = require('react/addons'),
-    cx = React.addons.classSet,
-    joinClasses = require('classnames');
+var React = require('react'),
+    cx = require('classnames');
 
 var Table = React.createClass({
   propTypes: {
@@ -17,7 +16,7 @@ var Table = React.createClass({
       bordered: this.props.bordered
     };
     return (
-      <table className={joinClasses(this.props.className, cx(classes))} {...this.props}>
+      <table className={cx(this.props.className, classes)} {...this.props}>
         {this.props.children}
       </table>
     );

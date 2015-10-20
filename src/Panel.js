@@ -1,6 +1,5 @@
 var React = require('react'),
-    cx = React.addons.classSet,
-    joinClasses = require('classnames');
+    cx = require('classnames');
 
 var Panel = React.createClass({
   render() {
@@ -8,7 +7,7 @@ var Panel = React.createClass({
       'card-panel': true
     };
     return (
-      <div className={joinClasses(this.props.className, cx(classes))}
+      <div className={cx(this.props.className, classes)}
         {...this.props}>
         {this.props.children}
       </div>

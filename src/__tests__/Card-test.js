@@ -2,7 +2,7 @@ jest.dontMock('../Card');
 jest.dontMock('../CardTitle');
 
 describe('Card', function() {
-  var React = require('react/addons'),
+  var React = require('react'),
       TestUtils = React.addons.TestUtils,
       Card = require('../Card'),
       CardTitle = require('../CardTitle'),

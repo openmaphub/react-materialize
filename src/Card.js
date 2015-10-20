@@ -1,5 +1,4 @@
 var React = require('react'),
-    cx = React.addons.classSet,
     joinClasses = require('classnames');
 
 var Card = React.createClass({
@@ -10,10 +9,10 @@ var Card = React.createClass({
 
   render() {
     var {title, header, className, textClassName, actions, children, ...props} = this.props;
-    var classes = { card: true };
+    var classes = {card: true};
     return (
       <div {...props}
-        className={joinClasses(className, cx(classes))} >
+        className={joinClasses(className, classes)} >
         {header}
         <div className={joinClasses('card-content', textClassName)}>
           {title ? this.renderTitle(title) : null}

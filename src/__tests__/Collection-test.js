@@ -2,7 +2,7 @@ jest.dontMock('../Collection');
 jest.dontMock('../CollectionItem');
 
 describe('Collection', function() {
-  var React = require('react/addons'),
+  var React = require('react'),
       TestUtils = React.addons.TestUtils,
       Collection = require('../Collection'),
       CollectionItem = require('../CollectionItem'),

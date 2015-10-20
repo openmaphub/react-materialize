@@ -1,6 +1,5 @@
-var React = require('react/addons'),
-    cx = React.addons.classSet,
-    joinClasses = require('classnames');
+var React = require('react'),
+    cx = require('classnames');
 
 var Toast = React.createClass({
   propTypes: {
@@ -18,7 +17,7 @@ var Toast = React.createClass({
     };
     var {className, children, ...props} = this.props;
     return (
-      <div className={joinClasses(className, cx(classes))} style={style}>
+      <div className={cx(className, classes)} style={style}>
         <span>
           {children}
         </span>

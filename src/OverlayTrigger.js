@@ -1,6 +1,5 @@
 var React = require('react'),
-    cx = React.addons.classSet,
-    joinClasses = require('classnames'),
+    cx = require('classnames'),
     cloneWithProps = require('react/lib/cloneWithProps'),
     OverlayMixin = require('./OverlayMixin');
 

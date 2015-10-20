@@ -1,6 +1,5 @@
-var React = require('react/addons'),
-    cx = React.addons.classSet,
-    joinClasses = require('classnames'),
+var React = require('react'),
+    cx = require('classnames'),
     cloneWithProps = require('react/lib/cloneWithProps');
 
 var Collapsible = React.createClass({
@@ -22,7 +21,7 @@ var Collapsible = React.createClass({
       accordion
     };
     return (
-      <ul className={joinClasses(className, cx(classes))} {...props}>
+      <ul className={cx(className, classes)} {...props}>
         {React.Children.map(children, this.renderItem)}
       </ul>
     );

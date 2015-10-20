@@ -1,6 +1,4 @@
-var React = require('react/addons'),
-    cx = React.addons.classSet,
-    joinClasses = require('classnames');
+var React = require('react');
 
 var TabArea = React.createClass({
   render() {

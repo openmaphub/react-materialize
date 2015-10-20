@@ -1,6 +1,4 @@
-var React = require('react'),
-    cx = React.addons.classSet,
-    joinClasses = require('classnames');
+var React = require('react');
 
 var NavItem = React.createClass({
   propTypes: {

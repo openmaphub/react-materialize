@@ -1,6 +1,5 @@
-var React = require('react/addons'),
-    cx = React.addons.classSet,
-    joinClasses = require('classnames'),
+var React = require('react'),
+    cx = require('classnames'),
     Icon = require('./Icon');
 
 var CollapsibleItem = React.createClass({

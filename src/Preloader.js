@@ -1,6 +1,5 @@
-var React = require('react/addons'),
-    cx = React.addons.classSet,
-    joinClasses = require('classnames'),
+var React = require('react'),
+    cx = require('classnames'),
     constants = require('./constants');
 
 var Preloader = React.createClass({
@@ -26,7 +25,7 @@ var Preloader = React.createClass({
       classes[this.props.size] = true;
     }
     return (
-      <div className={joinClasses(this.props.className, cx(classes))}>
+      <div className={cx(this.props.className, classes)}>
         {this.props.colors.map(color => {
           var spinnerClasses = {
             'spinner-layer': true
